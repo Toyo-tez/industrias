@@ -66,7 +66,7 @@ if ($conn->connect_error) {
     if ($result->num_rows > 0) {
       // Login successful, redirect to dashboard
       echo "Login successful! Redirecting to dashboard...";
-      header('Location: dashboard.php');
+      header('Location: plantilla/index.html');
       die(); // Stop executing the script
     } else {
       // Login failed, display error message
