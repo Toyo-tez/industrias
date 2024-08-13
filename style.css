@@ -9,7 +9,7 @@
   background-color:rgb(255, 255, 255)
 }
 body{
-    background-color: rgb(0, 128, 255);
+    background: rgb(88, 187, 67);
     }
     .cuadrado2{
         position: absolute;
@@ -21,7 +21,11 @@ body{
       background-color:rgb(255, 255, 255)
     }
     .titulo{
-color: black;
+        font-family: 'Imperial Script';
+        src: url('fonts/imperial-script.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        color: black;
         font-size: 80px; 
         position: absolute;
         width: 10px;
@@ -31,7 +35,8 @@ color: black;
 
     }
     .frase{
-        color:rgba(11, 102, 193, 0.507);
+        font-family: 'IM FELL DW Pica';
+        color: rgb(44, 0, 255);
                 font-size: 30px; 
                 position:absolute;
                 width: 80%;
@@ -45,9 +50,8 @@ color: black;
                 width: 100px;
                 height: 100px;
             }
-
                 .b1{
-
+                    font-family: 'IM FELL DW Pica';
                     color:rgb(0, 38, 112);
                     font-size: 30px; 
                     position:absolute;
@@ -58,7 +62,7 @@ color: black;
 
                 }
                 .b2{
-
+                    font-family: 'IM FELL DW Pica';
                     color:rgb(0, 38, 112);
                     font-size: 30px; 
                     position:absolute;
@@ -69,7 +73,7 @@ color: black;
 
                 }
                 .b3{
-
+                    font-family: 'IM FELL DW Pica';
                     color:rgb(0, 38, 112);
                     font-size: 30px; 
                     position:absolute;
