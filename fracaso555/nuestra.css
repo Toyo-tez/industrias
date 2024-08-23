@@ -80,17 +80,17 @@ body{
                
                 .carousel-item img {
                   width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor*/
-                  height: auto; /* Mantiene la relación de aspecto de la imagen */
+                  height: 180%; /* Mantiene la relación de aspecto de la imagen */
                 }
                 #carouselExampleIndicators {
-                    width: 80%;
+                    width: 100%;
                     top: 151px;
-                    left: -232px;
+                    left: auto;
                     max-width: 800px;
                     margin: auto;
                   }
-              
-                 .ip{/* imagen proceso */
+              /* 
+                 .ip{
                         position: relative;
                         top:200px;
                         left: 50%;
@@ -98,7 +98,7 @@ body{
                         height: auto;
                  }
 
-                 .pi{/*proceso info */
+                 .pi{
                     position: absolute;
                     border-radius: 10%;
                     width: 40%; 
@@ -115,4 +115,4 @@ body{
                     position:absolute;
                     left: 2%;
 
-                 }
+                 }*/
