@@ -1,7 +1,7 @@
 
 .cuadrado{
     position: absolute;
-    width: 200%; 
+    width: 140%; 
     height: 30%;
     left: 0;
     top: -5%;
@@ -9,11 +9,11 @@
   background-color:rgb(255, 255, 255)
 }
 body{
-    background: rgb(88, 187, 67);
+    background: rgb(167, 201, 87);
     }
     .cuadrado2{
         position: absolute;
-        width: 200%; 
+        width: 140%; 
         height: 166px;
         left: 0;
         top: 400%;
@@ -52,7 +52,7 @@ body{
                     position:absolute;
                     width: 80%;
                     height: 76px;
-                    left: 45%;
+                    left: 30%;
                     top: 5%;
 
                 }
@@ -63,7 +63,7 @@ body{
                     position:absolute;
                     width: 80%;
                     height: 76px;
-                    left: 60%;
+                    left: 40%;
                     top: 5%;
 
                 }
@@ -74,29 +74,40 @@ body{
                     position:absolute;
                     width: 80%;
                     height: 76px;
-                    left: 75%;
+                    left: 50%;
                     top: 5%;
                 }
-                 .ic{
-                    position: relative;
-                    top: 145px;
-                    width: 100%;
-                    margin: 0 auto;             
-                 }
-                 .ip{
+               
+                .carousel-item img {
+                  width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor*/
+                  height: auto; /* Mantiene la relación de aspecto de la imagen */
+                }
+                #carouselExampleIndicators {
+                    width: 80%;
+                    top: 151px;
+                    left: -232px;
+                    max-width: 800px;
+                    margin: auto;
+                  }
+              
+                 .ip{/* imagen proceso */
                         position: relative;
-                        top: 100px;
+                        top:200px;
                         left: 50%;
+                        width: 100%;
+                        height: auto;
                  }
 
-                 .pi{
+                 .pi{/*proceso info */
                     position: absolute;
+                    border-radius: 10%;
                     width: 40%; 
-                    height: 80%;
+                    height: 85%;
                     left: 20px;
-                    top: 170%;
+                    top: 700px;
                     font-size: 20px; 
                   background-color:rgb(255, 255, 255)
+
                  }
                  p{
 
