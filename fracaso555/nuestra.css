@@ -1,7 +1,7 @@
 
 .cuadrado{
     position: absolute;
-    width: 140%; 
+    width: 100%; 
     height: 30%;
     left: 0;
     top: -5%;
@@ -13,7 +13,7 @@ body{
     }
     .cuadrado2{
         position: absolute;
-        width: 140%; 
+        width: 100%; 
         height: 166px;
         left: 0;
         top: 400%;
@@ -44,75 +44,69 @@ body{
                 left: 5%;
                 top: 15%;
         
-            }
-                .b1{
-                    font-family: 'IM FELL DW Pica';
-                    color: rgb(79, 119, 45);
-                    font-size: 50px; 
-                    position:absolute;
-                    width: 80%;
-                    height: 76px;
-                    left: 30%;
-                    top: 5%;
+            } .b1{
+              font-family: 'IM FELL DW Pica';
+              color: rgb(79, 119, 45);
+              font-size: 40px; 
+              position:absolute;
+              width: 80%;
+              height: 76px;
+              left: 45%;
+              top: 15%;
 
-                }
-                .b2{
-                    font-family: 'IM FELL DW Pica';
-                    color: rgb(79, 119, 45);
-                    font-size: 50px; 
-                    position:absolute;
-                    width: 80%;
-                    height: 76px;
-                    left: 40%;
-                    top: 5%;
+          }
+          .b2{
+              font-family: 'IM FELL DW Pica';
+              color: rgb(79, 119, 45);
+              font-size: 40px; 
+              position:absolute;
+              width: 80%;
+              height: 76px;
+              left: 60%;
+              top: 15%;
 
-                }
-                .b3{
-                    font-family: 'IM FELL DW Pica';
-                    color: rgb(79, 119, 45);
-                    font-size: 50px; 
-                    position:absolute;
-                    width: 80%;
-                    height: 76px;
-                    left: 50%;
-                    top: 5%;
-                }
-               
-                .carousel-item img {
-                  width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor*/
-                  height: 180%; /* Mantiene la relación de aspecto de la imagen */
-                }
-                #carouselExampleIndicators {
-                    width: 100%;
-                    top: 151px;
-                    left: auto;
-                    max-width: 800px;
-                    margin: auto;
-                  }
-              /* 
-                 .ip{
-                        position: relative;
-                        top:200px;
-                        left: 50%;
-                        width: 100%;
-                        height: auto;
-                 }
-
-                 .pi{
+          }
+          .b3{
+              font-family: 'IM FELL DW Pica';
+              color: rgb(79, 119, 45);
+              font-size: 40px; 
+              position:absolute;
+              width: 80%;
+              height: 76px;
+              left: 75%;
+              top: 15%;
+          }
+              
+                  .area{
                     position: absolute;
-                    border-radius: 10%;
-                    width: 40%; 
-                    height: 85%;
-                    left: 20px;
-                    top: 700px;
+                    width: 800px; 
+                    height: 500px;
+                    border-radius: 50px;
+                    left: 14px;
+                    top: 30%;
                     font-size: 20px; 
                   background-color:rgb(255, 255, 255)
 
-                 }
-                 p{
+                  }
+                  .area2{
+                    position: absolute;
+                    width: 800px; 
+                    height: 500px;
+                    border-radius: 50px;
+                    left: 840px;
+                    top: 30%;
+                    font-size: 20px; 
+                  background-color:rgb(255, 255, 255)
 
-                    font-family: 'IM FELL DW Pica';
-                    position:absolute;
-                    left: 2%;
+                  }
 
-                 }*/
+
+                            
+                 .ip{
+                        position: relative;
+                        top:20px; 
+                        left: 20%;
+                        }
+                      
+
+ 
