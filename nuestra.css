@@ -1,0 +1,122 @@
+
+.cuadrado{
+    position: absolute;
+    width: 100%; 
+    height: 30%;
+    left: 0;
+    top: -5%;
+    font-size: 20px; 
+  background-color:rgb(255, 255, 255)
+}
+body{
+    background: rgb(167, 201, 87);
+    }
+    .cuadrado2{
+        position: absolute;
+        width: 100%; 
+        height: 166px;
+        left: 0;
+        top: 400%;
+        font-size: 20px; 
+      background-color:rgb(255, 255, 255)
+    }
+    .titulo{
+        font-family: 'Imperial Script';
+        src: url('fonts/imperial-script.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        color: black;
+        font-size: 90px; 
+        position: absolute;
+        width: 10px;
+        height: 76px;
+        left: 5%;
+        top: -2%;
+
+    }
+    .frase{
+        font-family: 'IM FELL DW Pica';
+        color: rgb(79, 119, 45);
+                font-size: 40px; 
+                position:absolute;
+                width: 80%;
+                height: 76px;
+                left: 5%;
+                top: 15%;
+        
+            } .b1{
+              font-family: 'IM FELL DW Pica';
+              color: rgb(79, 119, 45);
+              font-size: 40px; 
+              position:absolute;
+              width: 80%;
+              height: 76px;
+              left: 45%;
+              top: 15%;
+
+          }
+          .b2{
+              font-family: 'IM FELL DW Pica';
+              color: rgb(79, 119, 45);
+              font-size: 40px; 
+              position:absolute;
+              width: 80%;
+              height: 76px;
+              left: 60%;
+              top: 15%;
+
+          }
+          .b3{
+              font-family: 'IM FELL DW Pica';
+              color: rgb(79, 119, 45);
+              font-size: 40px; 
+              position:absolute;
+              width: 80%;
+              height: 76px;
+              left: 75%;
+              top: 15%;
+          }
+              
+                  .area{
+                    position: absolute;
+                    width: 800px; 
+                    height: 500px;
+                    border-radius: 50px;
+                    left: 14px;
+                    top: 30%;
+                    font-size: 20px; 
+                  background-color:rgb(255, 255, 255)
+
+                  }
+                  .area2{
+                    position: absolute;
+                    width: 800px; 
+                    height: 500px;
+                    border-radius: 50px;
+                    left: 840px;
+                    top: 30%;
+                    font-size: 20px; 
+                  background-color:rgb(255, 255, 255)
+
+                  }
+
+
+                            
+                 .ip{
+                        position: relative;
+                        top:20px; 
+                        left: 15%;
+                        }
+                        .cuadrado3{
+                          position: absolute;
+                          width: 60%; 
+                          height: 1%;
+                          left: 0;
+                         top: 120%;
+                          font-size: 20px; 
+                        background-color:rgba(255, 255, 255, 0.497)
+                          
+                        }
+                      
+
+ 

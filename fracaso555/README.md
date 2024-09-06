@@ -1,2 +1,0 @@
-# industrias
-When industrializas
