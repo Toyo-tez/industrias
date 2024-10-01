@@ -1,7 +1,8 @@
 
+
 .cuadrado{
   position: absolute;
-  width: 200%; 
+  width: 100%; 
   height: 30%;
   left: 0;
   top: -5%;
@@ -9,11 +10,11 @@
 background-color:rgb(255, 255, 255)
 }
 body{
-  background: rgb(88, 187, 67);
+  background: rgb(167, 201, 87);
   }
   .cuadrado2{
       position: absolute;
-      width: 200%; 
+      width: 100%; 
       height: 166px;
       left: 0;
       top: 400%;
@@ -21,89 +22,105 @@ body{
     background-color:rgb(255, 255, 255)
   }
   .titulo{
-      font-family: 'Imperial Script';
-      src: url('fonts/imperial-script.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-      color: black;
-      font-size: 90px; 
-      position: absolute;
-      width: 10px;
-      height: 76px;
-      left: 5%;
-      top: -2%;
+    font-family: 'Imperial Script';
+    src: url('fonts/imperial-script.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    color: black;
+    font-size: 98px; 
+    position: absolute;
+    width: 10px;
+    height: 76px;
+    left: 2%;
+    top: 60px;
 
-  }
-  .frase{
-      font-family: 'IM FELL DW Pica';
-      color: rgb(79, 119, 45);
-              font-size: 40px; 
-              position:absolute;
-              width: 80%;
-              height: 76px;
-              left: 5%;
-              top: 15%;
+}
+.frase{
+    font-family: 'IM FELL DW Pica';
+    color: rgba(80, 119, 45, 0.693);
+            font-size: 40px; 
+            position:absolute;
+            width: 80%;
+            height: 76px;
+            left: 0px;
+            top: 150px;
+    
       
-          }
-          .b1{
-              font-family: 'IM FELL DW Pica';
-              color: rgb(79, 119, 45);
-              font-size: 50px; 
-              position:absolute;
-              width: 80%;
-              height: 76px;
-              left: 38%;
-              top: 5%;
+          } .b1{
+            font-family: 'IM FELL DW Pica';
+            color: rgb(79, 119, 45);
+            font-size: 50px; 
+            position:absolute;
+            width: 80%;
+            height: 76px;
+            left: 45%;
+            top: 15%;
 
-          }
-          .b2{
-              font-family: 'IM FELL DW Pica';
-              color: rgb(79, 119, 45);
-              font-size: 50px; 
-              position:absolute;
-              width: 80%;
-              height: 76px;
-              left: 48%;
-              top: 5%;
+        }
+        .b2{
+            font-family: 'IM FELL DW Pica';
+            color: rgb(79, 119, 45);
+            font-size: 50px; 
+            position:absolute;
+            width: 80%;
+            height: 76px;
+            left: 60%;
+            top: 15%;
 
-          }
-          .b3{
-              font-family: 'IM FELL DW Pica';
-              color: rgb(79, 119, 45);
-              font-size: 50px; 
-              position:absolute;
-              width: 80%;
-              height: 76px;
-              left: 58%;
-              top: 5%;
-          }
+        }
+        .b3{
+            font-family: 'IM FELL DW Pica';
+            color: rgb(79, 119, 45);
+            font-size: 50px; 
+            position:absolute;
+            width: 80%;
+            height: 76px;
+            left: 75%;
+            top: 8%;
+        }
             
-               .ic{
-                  position: relative;
-                  top: 145px;
-                  width: 100%;
-                  margin: 0 auto;             
-               }
-            
-               .ip{
-                      position: relative;
-                      top: 100px;
-                      left: 50%;
-               }
-
-               .pi{
+                .area{
                   position: absolute;
-                  width: 40%; 
-                  height: 80%;
-                  left: 20px;
-                  top: 170%;
+                  width: 800px; 
+                  height: 500px;
+                  border-radius: 50px;
+                  left: 14px;
+                  top: 30%;
                   font-size: 20px; 
                 background-color:rgb(255, 255, 255)
-               }
-               p{
 
-                  font-family: 'IM FELL DW Pica';
-                  position:absolute;
-                  left: 2%;
+                }
+                .area2{
+                  position: absolute;
+                  width: 800px; 
+                  height: 500px;
+                  border-radius: 50px;
+                  left: 840px;
+                  top: 30%;
+                  font-size: 20px; 
+                background-color:rgb(255, 255, 255)
 
-               }
+                }
+
+                          
+               .ip{
+                      position: relative;
+                      top:20px; 
+                      left: 15%;
+                      }
+                      .cuadrado3{
+                        position: absolute;
+                        width: 60%; 
+                        height: 1%;
+                        left: 0;
+                       top: 120%;
+                        font-size: 20px; 
+                      background-color:rgba(255, 255, 255, 0.497)
+                        
+                      }
+                      .logo{
+                        position: absolute;
+                        top: 70px;
+                        left: 350px;
+
+                      }
