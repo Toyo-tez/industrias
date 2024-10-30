@@ -23,9 +23,9 @@ $app = new Laravel\Lumen\Application(
     dirname(__DIR__)
 );
 
- $app->withFacades();
+// $app->withFacades();
 
- $app->withEloquent();
+// $app->withEloquent();
 
 /*
 |--------------------------------------------------------------------------
@@ -112,13 +112,4 @@ $app->router->group([
     require __DIR__.'/../routes/web.php';
 });
 
-
-
 return $app;
-$app->routeMiddleware([
-    'auth' => App\Http\Middleware\JwtMiddleware::class,
-]);
-$router->get('/perfil', ['middleware' => 'auth', function () {
-    // Código para el perfil de usuario
-}]);
-

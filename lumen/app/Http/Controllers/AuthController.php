@@ -3,34 +3,35 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\User;
-use Firebase\JWT\JWT;
-use Illuminate\Support\Facades\DB;
+use App\Models\User;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Validator; 
+use Illuminate\Support\Facades\Session;
 
 class AuthController extends Controller
 {
+    public function showLoginForm()
+    {
+        return view('login'); // Carga la vista 'login.blade.php'
+    }
+
     public function login(Request $request)
     {
-        // Usar Validator en lugar de $request->validate()
-        $validator = Validator::make($request->all(), [
-            'username' => 'required',
-            'password' => 'required',
+        $request->validate([
+            'username' => 'required|string',
+            'password' => 'required|string',
         ]);
 
-        if ($validator->fails()) {
-            return response()->json(['message' => 'Validation failed', 'errors' => $validator->errors()], 422);
+        $user = User::where('username', $request->username)->first();
+
+        if ($user && Hash::check($request->password, $user->password)) {
+            // Login exitoso, guardar en sesión
+            Session::put('user', $user->id);
+            return redirect('/dashboard'); // Redirige al dashboard o a la ruta deseada
         }
 
-        $user = DB::table('users')->where('username', $request->username)->first();
-
-        if (!$user || !Hash::check($request->password, $user->password)) {
-            return response()->json(['message' => 'Invalid credentials'], 401);
-        }
-
-        // Aquí podrías generar un token de sesión o JWT
-        return response()->json(['message' => 'Login successful']);
+        // Credenciales incorrectas
+        return back()->withErrors([
+            'error' => 'Nombre de usuario o contraseña incorrectos.',
+        ]);
     }
 }
-
