@@ -90,7 +90,7 @@
           <div class="col-lg-3 col-6">
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>120~</h3>
+                <h3 id="caña-talada-value">Cargando...</h3> <!-- Aquí se actualizará el valor -->
                 <p>Caña Talada</p>
               </div>
               <div class="icon">
@@ -103,7 +103,7 @@
           <div class="col-lg-3 col-6">
             <div class="small-box bg-danger">
               <div class="inner">
-                <h3>5</h3>
+                <h3 id="accidentes-value">Cargando...</h3>
                 <p>Accidentes este mes</p>
               </div>
               <div class="icon">
@@ -116,7 +116,7 @@
           <div class="col-lg-3 col-6">
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3>15</h3>
+                <h3 id="alarmas-value">Cargando...</h3>
                 <p>Alarmas Sonadas</p>
               </div>
               <div class="icon">
@@ -129,7 +129,7 @@
           <div class="col-lg-3 col-6">
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>80%</h3>
+                <h3 id="produccion-value">Cargando...</h3>
                 <p>Producción Mensual</p>
               </div>
               <div class="icon">
@@ -143,7 +143,7 @@
       <div class="col-lg-3 col-6">
         <div class="small-box bg-primary">
           <div class="inner">
-            <h3>120</h3> <!-- Placeholder value -->
+            <h3 id="horas-value">Cargando...</h3> <!-- Placeholder value -->
             <p>Horas de Funcionamiento</p>
           </div>
           <div class="icon">
@@ -192,6 +192,62 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha384-7NrRHqlWUj2hJl3a/dZj/a1GxuQc56mJ3aYsEnydBYrY1jR+RSt6SBvK3sHfj+mJ" crossorigin="anonymous"></script>
 <script src="dist/js/adminlte.min.js"></script>
 <script>
+  // Hacer la solicitud a la API de Lumen
+  fetch('/industrias/lumen/public/cana-talada')  // Asegúrate de que esta ruta sea correcta
+    .then(response => response.json())
+    .then(data => {
+      // Actualizar el contenido del h3 con el valor recibido
+      document.getElementById('caña-talada-value').textContent = data.caña_talada + '~';
+    })
+    .catch(error => {
+      console.error('Error al obtener los datos:', error);
+      document.getElementById('caña-talada-value').textContent = 'Error al cargar';
+    });
+    
+    fetch('/industrias/lumen/public/accidentes/')
+  .then(response => response.json())  // Convierte la respuesta a JSON
+  .then(data => {
+    console.log(data);  // Verifica lo que recibes
+    document.getElementById('accidentes-value').textContent = data.accidentes;
+  })
+  .catch(error => {
+    console.error('Error al obtener los datos:', error);
+    document.getElementById('accidentes-value').textContent = 'Error al cargar';
+  });
+
+  fetch('/industrias/lumen/public/alarma/')
+  .then(response => response.json())  // Convierte la respuesta a JSON
+  .then(data => {
+    console.log(data);  // Verifica lo que recibes
+    document.getElementById('alarmas-value').textContent = data.alarmas;
+  })
+  .catch(error => {
+    console.error('Error al obtener los datos:', error);
+    document.getElementById('accidentes-value').textContent = 'Error al cargar';
+  });
+
+  fetch('/industrias/lumen/public/produccion')  // Asegúrate de que esta ruta sea correcta
+    .then(response => response.json())
+    .then(data => {
+      // Actualizar el contenido del h3 con el valor recibido
+      document.getElementById('produccion-value').textContent = data.produccion + '%';
+    })
+    .catch(error => {
+      console.error('Error al obtener los datos:', error);
+      document.getElementById('produccion-value').textContent = 'Error al cargar';
+    });
+    
+    
+    fetch('/industrias/lumen/public/horas')  // Asegúrate de que esta ruta sea correcta
+    .then(response => response.json())
+    .then(data => {
+      // Actualizar el contenido del h3 con el valor recibido
+      document.getElementById('horas-value').textContent = data.horas;
+    })
+    .catch(error => {
+      console.error('Error al obtener los datos:', error);
+      document.getElementById('horas-value').textContent = 'Error al cargar';
+    });
 // Configuración del gráfico de barras
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
